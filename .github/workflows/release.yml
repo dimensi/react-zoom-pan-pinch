@@ -16,6 +16,8 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
+      - name: Authenticate with private NPM package
+        run: echo "${{ secrets.NPM_TOKEN }}"
       - name: Wait on tests
         uses: lewagon/wait-on-check-action@v1.3.1
         with:
