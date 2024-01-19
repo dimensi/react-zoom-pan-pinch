@@ -251,20 +251,17 @@ export const wrapperPropsTable: ComponentProps = {
     allowLeftClickPan: {
       type: ["boolean"],
       defaultValue: String(initialSetup.panning.allowLeftClickPan),
-      description:
-        "Allow left click to initiate panning",
+      description: "Allow left click to initiate panning",
     },
     allowMiddleClickPan: {
       type: ["boolean"],
       defaultValue: String(initialSetup.panning.allowMiddleClickPan),
-      description:
-        "Allow middle click to initiate panning",
+      description: "Allow middle click to initiate panning",
     },
     allowRightClickPan: {
       type: ["boolean"],
       defaultValue: String(initialSetup.panning.allowRightClickPan),
-      description:
-        "Allow right click to initiate panning",
+      description: "Allow right click to initiate panning",
     },
     activationKeys: {
       type: ["string[]"],
