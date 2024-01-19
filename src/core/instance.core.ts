@@ -215,7 +215,8 @@ export class ZoomPanPinch {
       !this.contentComponent ||
       disabled ||
       !wheel.wheelDisabled ||
-      panning.disabled
+      panning.disabled ||
+      !panning.wheelPanning
     ) {
       return;
     }
