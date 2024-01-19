@@ -31,10 +31,10 @@ export const isPanningStartAllowed = (
 export const isPanningAllowed = (
   contextInstance: ReactZoomPanPinchContext,
 ): boolean => {
-  const { isInitialized, isPanning, setup } = contextInstance;
+  const { isInitialized, isPanning, isWheelPanning, setup } = contextInstance;
   const { disabled } = setup.panning;
 
-  const isAllowed = isInitialized && isPanning && !disabled;
+  const isAllowed = isInitialized && isPanning && !isWheelPanning && !disabled;
 
   if (!isAllowed) return false;
 

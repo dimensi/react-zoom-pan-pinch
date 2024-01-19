@@ -35,7 +35,7 @@ export const argsTypes = {
     },
   },
   "wheel.wheelDisabled": {
-    defaultValue: initialSetup.wheel.wheelDisabled,
+    defaultValue: true ?? initialSetup.wheel.wheelDisabled,
     control: { type: "boolean" },
     table: {
       defaultValue: { summary: "false" },
